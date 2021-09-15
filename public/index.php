@@ -1,173 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <title>Evan's page </title>
-       <link rel="author" href="humans.txt" />
-       <meta name="description" content="Welome to Evan Loiterman's page">
-       <meta name="keywords" content="web developeer, artist">
-       
-       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 
-        <link href="./dist/css/main.min.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-     <!--<h1>I'm Evan</h1>-->
-    
-     <header>
-     <!-- <span class="logo">My WebSite</span>
-        <a id="toggleMenu">Menu<a> -->
 
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="favicon.ico"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="resume.html">Resume</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">contact</a>
-                </li>
-           
-              </ul>
-            </div>
-          </nav>
+      <?php
 
-<!--
-     <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    -->
-      </header>
+require '../core/bootstrap.php';
+// 1. Connect to the database
+require '../core/db_connect.php';
 
-      <main>
-      <h2>Evan Loiterman</h2>
-      <p> <a href="https://www.instagram.com/loitermanart/"> My art on instagram</a></p>
 
+
+
+//Build the page metadata
+$meta = [];
+$meta['description'] = "Users MicroTrain2105 User List Php bootcamp project";
+$meta['keywords'] = "Front End Developer, Artist, PHP";
+
+
+
+
+
+      $content = <<<EOT
    
-     <img class="avatar" src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="My Avatar">
-   <p>Random Qoute:</p>
-     <p id ="randomQoute">
-       <!--Waste no more time arguing about what a good man should be. Be one.
-      <br><i>-Marcus Aurelius</i> random quote here-->
-    </p>
-     <br>
-     <h3>Interests..and things</h3>
-   
+      
+        <main>
+            <h2>Evan Loiterman</h2>
+            <p> <a href="https://www.instagram.com/loitermanart/"> My art on instagram</a></p>
 
-     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/jim-dine.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/gogh.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/go.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-
-    <p>
-     <ul>
-         <li>My passion is drawing painting and Art history -feed the soul </li>
-         <li>I am a Krav maga enthusiast -I like to hit stuff -dicipline the body and mind</li>
-         <li>I code too  </li>
-         
-         <!--<li>Amor Fati -Gam Zu Litova goes hand in hand -words to live by</li>-->
-         <li>Most recent book read: Thrawn Aliances -Timothy Zahn</li>
-     </ul>
-    </p>
-
-    <!--
-     <h2>Summary</h2>
-     <p></p>
-    -->
-    </main>
-    <!--
-     <script>
-
-        var toggleMenu = document.getElementById('toggleMenu');
-        var nav = document.querySelector('nav');
-        toggleMenu.addEventListener(
-          'click',
-          function(){
-            if(nav.style.display=='block'){
-              nav.style.display='none';
-            }else{
-              nav.style.display='block';
-            }
-          }
-        );
-      </script>-->
-<!--random quote -->
-      <script>
-           //array todo -add html formatting to strings or add respective subquote somehow
-            const quotes = [
-              'Waste no more time arguing about what a good man should be. Be one. -Marcus Aurelius',
-              'Those who dream by day are cognizant of many things which escape those who dream only by night. -Edgar Allen Poe',
-              'If one does not know to which port one is sailing, no wind is favorable  -Seneca',
-              'In order to be a realist, you must believe in miracles. -David Ben Gurion',
-              'The best way to know God is to love many things. -Vincent Van Gogh'
-            ]
-            //random
-           //function selectQuote (){
-                let randomNum =Math.floor(Math.random () * (quotes.length));
-            //}
-           // selectQuote();
-            //print
-            document.getElementById('randomQoute').innerHTML =quotes[randomNum];
-            
-
-      </script>
-    <!-- end random quote -->  
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        
+          <img class="avatar" src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="My Avatar">
+          <p>Random Qoute:</p>
+            <p id ="randomQoute">
+              <!--Waste no more time arguing about what a good man should be. Be one.
+              <br><i>-Marcus Aurelius</i> random quote here-->
+            </p>
+          <br>
+          <h3>Interests..and things</h3>
+        
 
 
 
-    </body>
-</html>SepSep
+          <p>
+          <ul>
+              <li>My passion is drawing painting and Art history -feed the soul </li>
+              <li>I am a Krav maga enthusiast -I like to hit stuff -dicipline the body and mind</li>
+              <li>I code too  </li>
+              
+              <!--<li>Amor Fati -Gam Zu Litova goes hand in hand -words to live by</li>-->
+              <li>Most recent book read: Thrawn Aliances -Timothy Zahn</li>
+          </ul>
+          </p>
+
+      
+      </main>
+
+
+ 
+
+      EOT;
+      include '../core/layout.php';

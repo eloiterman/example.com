@@ -1,11 +1,13 @@
 <?php
-
+ #{$message} was on line 8 causing error
 require '../core/processContactForm.php';
 require '../core/session.php';
 
 $content = <<<EOT
+
+<h1> Contact form </h1>
 <form action="contact.php" method="POST">
-    {$message}
+  
     <input type="hidden" name="subject" value="New submission!">
   
   <div class="form-control">
