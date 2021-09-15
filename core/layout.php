@@ -71,7 +71,13 @@ function active($name){
                         <li><a href="../public/posts/add.php">add</a></li>
                 <li><a href="../public/posts/edit.php">edit</a></li>
                 <li><a href="../public/posts/delete.php">delete</a></li>
-
+                <li><a href="../public/posts/view.php">view</a></li>
+                
+                <li><a href="../public/users/add.php">users-add</a></li>
+                <li><a href="../public/users/edit.php">users-edit</a></li>
+                <li><a href="../public/users/delete.php">users-delete</a></li>
+                <li><a href="../public/users/view.php">users-view</a></li>
+           
                 
                         
             </ul>

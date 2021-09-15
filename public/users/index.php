@@ -1,9 +1,9 @@
 <?php
-require '../../core/bootstrap.php';
+//require '../../core/bootstrap.php';
 //require '../../config/keys.php';
-require '../../core/db_connect.php';
+//require '../../core/db_connect.php';
 //require '../../core/session.php';
-checkSession();
+//checkSession();
 
 //Build the page metadata
 $meta = [];

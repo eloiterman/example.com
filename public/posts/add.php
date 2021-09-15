@@ -1,8 +1,8 @@
 <?php
 require '../../core/functions.php';
-//require '../../config/keys.php';
+require '../../config/keys.php';
 require '../../core/db_connect.php';
-require '../../core/bootstrap.php';
+
 $message=null;
 
 $args = [
@@ -33,7 +33,7 @@ if(!empty($input)){
         $slug,
         $input['body']
     ])){
-       header('LOCATION:/example.com/public/posts');
+        header('LOCATION:/example.com/public/posts');
     }else{
         $message = 'Something bad happened';
     }
@@ -70,7 +70,6 @@ $content = <<<EOT
     <input type="submit" value="Submit" class="btn btn-primary">
     <a href="./" class="btn btn-success btn-lg">Cancel</a>
 </div>
-
 </form>
 EOT;
 
