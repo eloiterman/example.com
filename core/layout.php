@@ -68,6 +68,12 @@ function active($name){
                         <li class="nav-item">
                             <a class="nav-link" href="register.php">Register</a>
                         </li>
+                        <li><a href="../public/posts/add.php">add</a></li>
+                <li><a href="../public/posts/edit.php">edit</a></li>
+                <li><a href="../public/posts/delete.php">delete</a></li>
+
+                
+                        
             </ul>
 
            <!-- <ul>
