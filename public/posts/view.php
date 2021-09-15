@@ -2,6 +2,11 @@
 include '../../core/db_connect.php';
 checkSession();
 
+//Build the page metadata
+$meta = [];
+$meta['description'] = "Users MicroTrain2105 User List Php bootcamp project";
+$meta['keywords'] = "Front End Developer, Artist, PHP";
+
 $input = filter_input_array(INPUT_GET);
 $slug = preg_replace("/[^a-z0-9-]+/", "", $input['slug']);
 

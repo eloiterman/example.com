@@ -2,7 +2,13 @@
 //require '../../config/keys.php';
 require '../../core/bootstrap.php';
 require '../../core/db_connect.php';
-';
+
+//Build the page metadata
+$meta = [];
+$meta['description'] = "Users MicroTrain2105 User List Php bootcamp project";
+$meta['keywords'] = "Front End Developer, Artist, PHP";
+
+
 $args=[
   'id'=>FILTER_UNSAFE_RAW,
   'confirm'=>FILTER_VALIDATE_INT
