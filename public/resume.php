@@ -50,7 +50,7 @@ $meta['keywords'] = "Front End Developer, Artist, PHP";
 
 
       $content = <<<EOT
-
+   
       
       <main>
          <h1>Evan Loiterman</h1>
@@ -194,7 +194,20 @@ $meta['keywords'] = "Front End Developer, Artist, PHP";
       </main>
 
 
-
+      <script>
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+            toggleMenu.addEventListener(
+            'click',
+            function(){
+               if(nav.style.display=='block'){
+                  nav.style.display='none';
+               }else{
+                  nav.style.display='block';
+               }
+            }
+            );
+      </script>
 
       EOT;
       include '../core/layout.php';

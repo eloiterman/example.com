@@ -47,17 +47,30 @@ function active($name){
   <body>
 
     <div id="Wrapper">
+      <header>
         <nav class="top-nav">
-            <a href="index.html" class="pull-left" href="/">Evan's site</a>
+           <!-- <a href="index.php" class="pull-left" href="/">Evan's site</a>-->
+           
             <ul role="navigation">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="resume.php">Resume</a></li>
                 <li><a href="contact.php">Contact</a></li>
 
                 
+                <li class="nav-item">
+                            <a class="nav-link" href="/logout.php">Logout</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login.php">Login</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register.php">Register</a>
+                        </li>
             </ul>
 
-            <ul>
+           <!-- <ul>
                         <li class="nav-item">
                             <a class="nav-link" href="/logout.php">Logout</a>
                         </li>
@@ -70,9 +83,9 @@ function active($name){
                             <a class="nav-link" href="/register.php">Register</a>
                         </li>
 
-            </ul>
+            </ul>-->
         </nav>
-
+</header>
         <div class="row">
             <div id="Content">
                 <?php echo $content; ?>
