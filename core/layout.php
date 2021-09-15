@@ -101,8 +101,8 @@ function active($name){
         <div id="Footer" class="clearfix">
             <small>&copy; 2021- evanloiterman.com</small>
             <ul role="navigation">
-                <li><a href="terms.html">Terms</a></li>
-                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.php">Terms</a></li>
+                <li><a href="privacy.php">Privacy</a></li>
             </ul>
         </div>
     </div>
