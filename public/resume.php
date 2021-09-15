@@ -50,6 +50,8 @@ $meta['keywords'] = "Front End Developer, Artist, PHP";
 
 
       $content = <<<EOT
+
+      
       <main>
          <h1>Evan Loiterman</h1>
          <ul class="list-inline center">

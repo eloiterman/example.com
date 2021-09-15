@@ -39,7 +39,10 @@ function active($name){
 
       <title>About Evan</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="css/dist/main.css">
+      <!--<link rel="stylesheet" type="text/css" href="css/dist/main.css">-->
+
+      <link rel="stylesheet" type="text/css" href="../public/dist/css/main.css">
+      <link href=".../public/dist/css/main.min.css" type="text/css" rel="stylesheet">
   </head>
   <body>
 
